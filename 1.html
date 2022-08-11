@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- giup dien thoai nhan css ben trong the media -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>24h.com.vn</title>
+    
+</head>
+<body>
+
+
+    <style type="text/css">
+   
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+   
+    /*giao dien phone< 730 < giao dien tablet < 1023 < : giao dien pc
+
+
+   
+   - responsive web la 1 web co nhieu giao dien.
+   - viet  css cho nhieu man hinh
+
+   - pc: -> giao dien pc : 0- vo cung
+   - tablet: -> giao dien : 0 - 992
+   - phone: 0-768
+
+   
+
+    - 1023 <: giao dien pc, giu nguyen va bop nho lai, den 1023 thi bien doi ra giao dien 2
+    - < 1023 : bien doi sang  giao dien 2 :
+    - < 730: bien doi sang 3
+    */
+    /*thu nho giao dien thi e phai w sang % */
+
+    /*man hinh chinh*/
+    div{
+        max-width: 1100px;
+        width: calc(100% - 60px);
+        padding: 30px;
+        display: block;
+        margin: 0 auto;
+        background-color: yellow;
+    }
+    ul {
+        width: 100%;
+        display: inline-block;
+    }
+    ul li {
+        width: 24%;
+        float: left;
+        margin-left: 1.5%;
+    }
+    ul li:first-child{
+        width: 49%;
+        margin-left: 0;
+    }
+    ul li img{
+        width: 100%;
+    }
+    /*0-vo cung*/
+   
+    /*0-1023*/
+    @media only screen and (max-width: 1023px) {
+    ul li {
+        width: 49%; 
+        margin-left: 0;
+    }
+      ul li:first-child{
+        width: 100%;
+      }
+      ul li:last-child{
+        margin-left: 2%;
+      }
+    }
+
+    /*0-700*/
+    @media only screen and (max-width: 700px) {
+
+    }
+    </style>
+
+    <div class="main">
+        <ul>
+            <li>
+                <img src="./img/b1.webp">
+                <p>gười dân TP.HCM tiêm vaccine không cần đăng ký trước</p>
+            </li>
+            <li>
+                <img src="./img/item1.webp">
+                <p>gười dân TP.HCM tiêm vaccine không cần đăng ký trước</p>
+            </li>
+            <li>
+                <img src="./img/item2.webp">
+                <p>gười dân TP.HCM tiêm vaccine không cần đăng ký trước</p>
+            </li>
+        </ul>
+    </div>
+
+   
+    
+
+  
+</body>
+</html>
